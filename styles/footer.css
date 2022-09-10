@@ -40,3 +40,13 @@ hr {
     display: block;
   }
 }
+
+@media screen and (min-width: 1728px) {
+  .lista-rodape {
+    border-left: 1px solid var(--cinza-claro);
+    padding-left: 1em;
+  }
+  .rodape {
+    padding-block: 3em;
+  }
+}
