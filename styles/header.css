@@ -15,6 +15,14 @@
   position: relative;
 }
 
+.container__botao:checked ~ .container__rotulo > .cabecalho__menu-hamburger {
+  background-image: url('../img/Menu\ Aberto.png');
+}
+
+.container__botao:checked ~ .container__rotulo {
+  background: var(--azul-degrade);
+}
+
 .container {
   display: flex;
   align-items: center;
@@ -110,8 +118,28 @@
     display: block;
     width: auto;
   }
+
   .opcoes__botao {
     display: none;
+  }
+
+  .opcoes__botao:checked ~ .opcoes__rotulo > .opcoes__item {
+    background: var(--azul-degrade);
+    color: var(--branco);
+  }
+
+  .opcoes__item {
+    padding: 2em 1em;
+  }
+
+  .lista-menu__item:hover {
+    background: var(--azul-degrade);
+  }
+
+  .lista-menu__item:hover > .lista-menu__link {
+    -webkit-text-fill-color: var(--branco);
+    color: var(--branco);
+    text-decoration: none;
   }
 }
 
